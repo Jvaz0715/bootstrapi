@@ -51,15 +51,19 @@ checkWeatherButton.addEventListener('click', function(){
     fetch(URL)
         // Now process the raw response into an object
         .then((res) => res.json())
-        // Now process the above JSON, we will first console log a message
-        //but we want to use this space to change the img src
         .then((data) => {
             console.log('success!');
             // this will be where you query each info spot and change based on data
             const temp = document.querySelector(".temp-info");
+            //changes the temperature
             temp.innerText = data.temperature;
-            console.log(data.temperature);
-            console.log(data.wind);
-            console.log(data.description);
+
+            const wind = document.querySelector(".wind-info");
+
+            wind.innerText = data.wind;
+
+            const description = document.querySelector(".weather-description");
+
+            description.innerText = data.description;
         })
 })
