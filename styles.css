@@ -35,6 +35,8 @@ h1 {
     align-items: center;
 }
 
-#weather-description {
-    font-size: normal;
+.live-weather-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
