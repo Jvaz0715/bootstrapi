@@ -56,6 +56,8 @@ checkWeatherButton.addEventListener('click', function(){
         .then((data) => {
             console.log('success!');
             // this will be where you query each info spot and change based on data
+            const temp = document.querySelector(".temp-info");
+            temp.innerText = data.temperature;
             console.log(data.temperature);
             console.log(data.wind);
             console.log(data.description);
