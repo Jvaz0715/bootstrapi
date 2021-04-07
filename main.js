@@ -48,15 +48,16 @@ checkWeatherButton.addEventListener('click', function(){
     const URL = "https://goweather.herokuapp.com/weather/" + citySearched;
     console.log(URL)
     //make a request to the URL
-    /*fetch(URL)
+    fetch(URL)
         // Now process the raw response into an object
         .then((res) => res.json())
         // Now process the above JSON, we will first console log a message
         //but we want to use this space to change the img src
         .then((data) => {
             console.log('success!');
-            //const dogImage = document.querySelector("#card-img-top");
-            //console.log(data.message);
-            dogImage.src = data.message;
-        })*/
+            // this will be where you query each info spot and change based on data
+            console.log(data.temperature);
+            console.log(data.wind);
+            console.log(data.description);
+        })
 })
