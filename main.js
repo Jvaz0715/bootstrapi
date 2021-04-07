@@ -1,3 +1,5 @@
+//========Dog Image Section========
+
 // query the image in html to make it easier to change later on
 // you might need to put it in the actual click eventlistener
 const dogImage = document.querySelector(".card-img-top");
@@ -23,6 +25,15 @@ changeDogButton.addEventListener('click', function(){
             //console.log(data.message);
             dogImage.src = data.message;
         })
+})
 
+////=============================
+//========Weather Section========
 
+//Query check weather button
+const checkWeatherButton = document.querySelector("#weather-button");
+
+// test button
+checkWeatherButton.addEventListener('click', function() {
+    console.log("weather button clicked")
 })

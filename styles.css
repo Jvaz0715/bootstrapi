@@ -35,8 +35,13 @@ h1 {
     align-items: center;
 }
 
-.live-weather-title {
+.api-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#city-input {
+    margin-bottom: 5px;
 }
