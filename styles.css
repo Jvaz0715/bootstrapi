@@ -37,11 +37,12 @@ h1 {
 
 .api-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-#city-input {
-    margin-bottom: 5px;
+#weather-button {
+    margin: 2px;
+    margin-top: 16px;
 }

@@ -36,6 +36,7 @@ const checkWeatherButton = document.querySelector("#weather-button");
 // test button
 checkWeatherButton.addEventListener('click', function(){
     console.log("button was clicked");
+
     //API Request Below
     // =================
     //query the city input
@@ -66,7 +67,7 @@ checkWeatherButton.addEventListener('click', function(){
 
             description.innerText = data.description;
 
-            //change app background based on description
-            
+            //check to print array info
+            //console.log(data.forecast[0].temperature)
         })
 })
