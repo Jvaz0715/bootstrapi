@@ -65,5 +65,8 @@ checkWeatherButton.addEventListener('click', function(){
             const description = document.querySelector(".weather-description");
 
             description.innerText = data.description;
+
+            //change app background based on description
+            
         })
 })
