@@ -41,6 +41,10 @@ checkWeatherButton.addEventListener('click', function(){
     // =================
     //query the city input
     const cityInput = document.querySelector("#city-input");
+    // to change the city label
+    const cityName = document.querySelector("#city-name");
+
+    cityName.innerText = cityInput.value;
     //get the city input converted to lowercase string and no spaces to append later on url for search
     const citySearched = cityInput.value.toLowerCase().replace(/ /g, '');
     //console.log(citySearched)
