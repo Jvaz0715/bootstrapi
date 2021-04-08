@@ -73,6 +73,18 @@ Take the temperature, wind, and description from this response and display them
 somewhere on the page. You'll want to create new HTML elements in `index.html` that
 will store this information.
 
+
+## Part 3 - Your New App
+Create a third section of the project with an API of your choosing! You should make at least one request to this API and display the results on your page using JS. This could be displaying a random piece of art from the Met Museum of Art API, showing a random "Cat Fact" from the Cat Facts API, etc.
+The hardest part about this will likely be reading through the API's documentation and figuring out exactly how to use it.
+Some recommended starter APIs are listed below:
+Shibe API: https://shibe.online/
+Craft Beer API: https://punkapi.com/documentation/v2
+Crypto Currency API: https://www.coinlore.com/cryptocurrency-data-api
+Dad Joke API: https://icanhazdadjoke.com/api
+Fancy Taco API: https://github.com/evz/tacofancy-api
+Also, if you want to try to use an API outside of this list, that's great too! A large list of public APIs can be found here. I'd recommend using one that does not require authentication: https://github.com/public-apis/public-apis
+
 ## Stretch goals
 
 * Create a third sub-project with an API of your choosing. A large list of public
