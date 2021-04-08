@@ -99,28 +99,33 @@ checkWeatherButton.addEventListener('click', function(){
             dayThreeDegrees.innerText = data.forecast[2].temperature.replace(/\D/g,'') + "°";
             dayThreeDescribe.innerText = data.forecast[2].wind;
 
-            randomNumber1 = 0;//Math.floor(Math.random() * 3);
-            randomNumber2 = 0//Math.floor(Math.random() * 3);
-            randomNumber3 = 0//Math.floor(Math.random() * 3);
+            randomNumber1 = Math.floor(Math.random() * 3);
+            randomNumber2 = Math.floor(Math.random() * 3);
+            randomNumber3 = Math.floor(Math.random() * 3);
 
-            if (randomNumber1 === 0 || randomNumber2 === 0 || randomNumber3 === 0) {
+            if (randomNumber1 === 0) {
                 dayOneImage.src = "https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif";
+            } else if (randomNumber1 === 1) {
+                dayOneImage.src = "https://thumbs.gfycat.com/RapidDimEider-max-1mb.gif";
+            } else if (randomNumber1 === 2) {
+                dayOneImage.src = "https://lh3.googleusercontent.com/proxy/sxFHwsKREbuuVGKN7K3iEI2oyPsle-14PG1QKMJT3himY7VbGXTrJK5f3Ec5NEf6Ad_SpQPJgA33DoQ5N-UvXtSKFGnUp1M";
+            }
+            
+            if (randomNumber2 === 0) {
                 dayTwoImage.src = "https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif";
-                dayThreeImage.src = "https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif";
+            } else if (randomNumber2 === 1) {
+                dayTwoImage.src = "https://thumbs.gfycat.com/RapidDimEider-max-1mb.gif";
+            } else if (randomNumber2 === 2) {
+                dayTwoImage.src = "https://lh3.googleusercontent.com/proxy/sxFHwsKREbuuVGKN7K3iEI2oyPsle-14PG1QKMJT3himY7VbGXTrJK5f3Ec5NEf6Ad_SpQPJgA33DoQ5N-UvXtSKFGnUp1M";
             }
 
+            if (randomNumber3 === 0) {
+                dayThreeImage.src = "https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif";
+            } else if (randomNumber3 === 1) {
+                dayThreeImage.src = "https://thumbs.gfycat.com/RapidDimEider-max-1mb.gif";
+            } else if (randomNumber3 === 2) {
+                dayThreeImage.src = "https://lh3.googleusercontent.com/proxy/sxFHwsKREbuuVGKN7K3iEI2oyPsle-14PG1QKMJT3himY7VbGXTrJK5f3Ec5NEf6Ad_SpQPJgA33DoQ5N-UvXtSKFGnUp1M";
+            }
         
         })
 })
-
-function changeWeather() {
-    randomNumber1 = 0;//Math.floor(Math.random() * 3);
-    randomNumber2 = 0//Math.floor(Math.random() * 3);
-    randomNumber3 = 0//Math.floor(Math.random() * 3);
-
-    if (randomNumber1 === 0 || randomNumber2 === 0 || randomNumber3 === 0) {
-        dayOneImage.src = "https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif";
-        dayTwoImage.src = "https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif";
-        dayThreeImage.src = "https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif";
-    }
-}
