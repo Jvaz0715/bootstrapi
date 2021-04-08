@@ -58,6 +58,10 @@ h1 {
     margin: 5px;;
 }
 
+.future-degrees {
+    font-size: 60px;
+}
+
 th,
 td {
     display: flex;

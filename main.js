@@ -68,6 +68,6 @@ checkWeatherButton.addEventListener('click', function(){
             description.innerText = data.description;
 
             //check to print array info
-            //console.log(data.forecast[0].temperature)
+            console.log(data)
         })
 })
