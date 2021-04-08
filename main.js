@@ -68,6 +68,28 @@ checkWeatherButton.addEventListener('click', function(){
             description.innerText = data.description;
 
             //check to print array info
-            console.log(data)
+
+            //work on each day
+            //day one weather
+            const dayOneDegrees = document.querySelector("#day-one-degrees");
+            const dayOneDescribe = document.querySelector("#day-one-describe");
+            dayOneDegrees.innerText = data.forecast[0].temperature.replace(/\D/g,'') + "°";
+            dayOneDescribe.innerText = data.forecast[0].wind;
+            
+            //day two weather
+            const dayTwoDegrees = document.querySelector("#day-two-degrees");
+            const dayTwoDescribe = document.querySelector("#day-two-describe");
+            dayTwoDegrees.innerText = data.forecast[1].temperature.replace(/\D/g,'') + "°";
+            dayTwoDescribe.innerText = data.forecast[1].wind;
+
+            //day three weather
+            const dayThreeDegrees = document.querySelector("#day-three-degrees");
+            const dayThreeDescribe = document.querySelector("#day-three-describe");
+            dayThreeDegrees.innerText = data.forecast[2].temperature.replace(/\D/g,'') + "°";
+            dayThreeDescribe.innerText = data.forecast[2].wind;
+
+
+
+        
         })
 })
