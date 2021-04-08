@@ -40,10 +40,13 @@
                 <button class="btn btn-primary mb-3" id="weather-button">Get Weather</button>
             </div>
         </div>
-        <div>
+        <div class="weather-container">
             <!-- place information here -->
-            <table class="table table-striped">
+            <table class="table table-striped weather-table">
                 <thead class="live-weather-title">
+                    <tr>
+                        <th scope="col">City placeholder</th>
+                    </tr>
                     <tr>
                         <th scope="col">Live Weather Update</th>
                     </tr>
@@ -63,6 +66,39 @@
                     </tr>
                 </tbody>
             </table>
+
+            <div class="future-forecast-container">
+                <!--Day one -->
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-top" src="https://media1.giphy.com/media/3ov9jCEFMBtCy54q6Q/giphy.gif" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Next Day</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                   <!--Day two -->
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-top" src="https://media1.giphy.com/media/3ov9jCEFMBtCy54q6Q/giphy.gif" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                   <!--Day three -->
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-top" src="https://media1.giphy.com/media/3ov9jCEFMBtCy54q6Q/giphy.gif" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+
+
+
+            </div>
         </div>
     </div>
     <script src="main.js"></script>

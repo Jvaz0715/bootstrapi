@@ -42,7 +42,35 @@ h1 {
     justify-content: center;
 }
 
+.weather-display {
+    border: 3px solid black;
+}
 #weather-button {
     margin: 2px;
     margin-top: 16px;
+}
+
+.weather-table {
+    justify-content: center;
+    align-items: center;
+}
+
+th,
+td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-container {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.future-forecast-container {
+    /*border: 3px solid black;*/
+    width: 70%;
+    display: flex;
+    margin: 20px;
 }
