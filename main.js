@@ -82,21 +82,21 @@ checkWeatherButton.addEventListener('click', function(){
             const dayOneImage = document.querySelector("#day-one-img");
             const dayOneDegrees = document.querySelector("#day-one-degrees");
             const dayOneDescribe = document.querySelector("#day-one-describe");
-            dayOneDegrees.innerText = data.forecast[0].temperature.replace(/\D/g,'') + "°c";
+            dayOneDegrees.innerText = data.forecast[0].temperature.replace(/\D/g,'') + "°C";
             dayOneDescribe.innerText = data.forecast[0].wind;
             
             //day two weather
             const dayTwoImage = document.querySelector("#day-two-img");
             const dayTwoDegrees = document.querySelector("#day-two-degrees");
             const dayTwoDescribe = document.querySelector("#day-two-describe");
-            dayTwoDegrees.innerText = data.forecast[1].temperature.replace(/\D/g,'') + "°c";
+            dayTwoDegrees.innerText = data.forecast[1].temperature.replace(/\D/g,'') + "°C";
             dayTwoDescribe.innerText = data.forecast[1].wind;
 
             //day three weather
             const dayThreeImage = document.querySelector("#day-three-img");
             const dayThreeDegrees = document.querySelector("#day-three-degrees");
             const dayThreeDescribe = document.querySelector("#day-three-describe");
-            dayThreeDegrees.innerText = data.forecast[2].temperature.replace(/\D/g,'') + "°c";
+            dayThreeDegrees.innerText = data.forecast[2].temperature.replace(/\D/g,'') + "°C";
             dayThreeDescribe.innerText = data.forecast[2].wind;
 
             randomNumber1 = Math.floor(Math.random() * 3);
