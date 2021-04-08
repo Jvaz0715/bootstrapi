@@ -54,6 +54,9 @@ checkWeatherButton.addEventListener('click', function(){
         .then((res) => res.json())
         .then((data) => {
             console.log('success!');
+            //const to bring back hidden content
+            const weatherContainer = document.querySelector(".weather-container");
+            weatherContainer.setAttribute("id", "weather-container-revealed");
             // this will be where you query each info spot and change based on data
             const temp = document.querySelector(".temp-info");
             //changes the temperature

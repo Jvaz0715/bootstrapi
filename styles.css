@@ -43,7 +43,7 @@ h1 {
 }
 
 .weather-display {
-    border: 3px solid black;
+    
 }
 #weather-button {
     margin: 2px;
@@ -70,7 +70,13 @@ td {
 }
 
 .weather-container {
-    border: 3px solid black;
+    visibility: hidden;
+    display: none;
+    flex-direction: row;
+}
+
+#weather-container-revealed {
+    visibility: visible;
     display: flex;
     flex-direction: row;
 }
