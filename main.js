@@ -126,6 +126,5 @@ checkWeatherButton.addEventListener('click', function(){
             } else if (randomNumber3 === 2) {
                 dayThreeImage.src = "https://lh3.googleusercontent.com/proxy/sxFHwsKREbuuVGKN7K3iEI2oyPsle-14PG1QKMJT3himY7VbGXTrJK5f3Ec5NEf6Ad_SpQPJgA33DoQ5N-UvXtSKFGnUp1M";
             }
-        
         })
 })

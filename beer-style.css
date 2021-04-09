@@ -1,0 +1,48 @@
+
+#beer-container {
+    width: 90%;
+    max-width: 900px;
+    padding: 24px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    margin: 24px 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.beer-header {
+    border: 3px solid yellow;
+    text-align: center;
+}
+.beer-button-container {
+    border: 3px solid black;
+    display: flex;
+    margin-top: 10px;
+}
+
+.beer-displayer {
+    height: 85%;
+    border: 2px solid brown;
+}
+
+.abv-datebrew-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.beer-img-container
+ {
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beer-img
+ {
+    border: 3px solid blue;
+    width: auto;
+    height: 100%;
+    
+}
