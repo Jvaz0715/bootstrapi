@@ -19,16 +19,27 @@
     margin-top: 10px;
     margin-bottom: 10px;;
     flex: 1;
+    
 }
 
 #beer-button {
     width: 100%;
     background-color: #FBCE3A;
+    border: none;
+    outline: none;
+}
+
+
+#beer-button:hover {
+    height: 50px;
+    background-color: gray;
+    border: none;
+    outline: none;
 }
 
 .beer-displayer {
     height: 85%;
-    border: 2px solid brown;
+    /*border: 2px solid brown;*/
 }
 
 .abv-datebrew-container {
@@ -37,8 +48,7 @@
 
 }
 
-.beer-img-container
- {
+.beer-img-container {
     /*border: 3px solid green;*/
     display: flex;
     justify-content: center;
@@ -56,14 +66,27 @@
 .beer-name,
 .beer-tagline {
     text-align: end;
+    
+}
+.beer-name {
+    color: #c9595f;
+    font-size: 50px;
+}
+
+.beer-tagline {
+    color: gray;
+    font-style: italic;
 }
 
 .beer-described {
-    background-color: gray;
+    background-color: #E0D0B8;
     padding: 5px;
+    border-radius: 25px;
+    margin: 10px;
 }
 
 .beer-description-title,
 .beer-description {
     margin: 10px;
+    color: #372f2f;
 }

@@ -61,16 +61,18 @@ getBeerButton.addEventListener('click', function(){
             const beerTag = document.querySelector("#beer-tagline")
             const lastIndex = data[0].tagline[data[0].tagline.length - 1];
             if (lastIndex === "."){
-                beerTag.innerText = data[0].tagline.slice(0, -1);
+                beerTag.innerText = `"${data[0].tagline.slice(0, -1)}"`;
             } else if (data[0].tagline === null) {
                 beerTag.innerText = "";
             } else {
-                beerTag.innerText = data[0].tagline;
+                beerTag.innerText = `"${data[0].tagline}"`;
             }
             
 
             // //updates the beer description
             const beerDescription = document.querySelector(".beer-description");
+
+            beerDescription.innerText = data[0].description;
     
 
         })
