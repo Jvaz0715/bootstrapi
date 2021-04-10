@@ -25,15 +25,19 @@ getBeerButton.addEventListener('click', function(){
         .then((data) => {
             console.log('success!');
             console.log(data[0].first_brewed)
-            console.log(typeof data[0].abv)
+            console.log(data[0].abv)
             console.log(data[0].name)
             console.log(data[0].id)
             console.log(data[0].description)
 
             //query all the spots you need to update on click
             const ABV = document.querySelector(".abv");
-            ABV.innerText = `${data[0].abv}%`;
+            ABV.innerText = "Alcohol content: " + data[0].abv + "%";
             const dateBrewed = document.querySelector(".brewdate");
+            const yearBrewed = 
+            `${data[0].first_brewed[data[0].first_brewed.length - 4]}${data[0].first_brewed[data[0].first_brewed.length - 3]}${data[0].first_brewed[data[0].first_brewed.length - 2]}${data[0].first_brewed[data[0].first_brewed.length - 1]}`;
+
+            dateBrewed.innerText = "Date Brewed: " + yearBrewed
             const beerImg = document.querySelector(".beer-img");
             const beerName = document.querySelector("#beer-name");
             const beerTag = document.querySelector("#beer-tagline")
