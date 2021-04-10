@@ -23,12 +23,12 @@ getBeerButton.addEventListener('click', function(){
         // Now process the above JSON, we will first console log a message
         //but we want to use this space to change the img src
         .then((data) => {
-            console.log('success!');
+            /*console.log('success!');
             console.log(data[0].first_brewed)
             console.log(data[0].abv)
             console.log(data[0].name)
             console.log(data[0].id)
-            console.log(data[0].description)
+            console.log(data[0].description)*/
 
             //query all the spots you need to update on click
             //updates the ABV
@@ -54,11 +54,20 @@ getBeerButton.addEventListener('click', function(){
 
              //updates the beer name
             const beerName = document.querySelector("#beer-name");
-
+            beerName.innerText = data[0].name;
 
 
              //updates the beer tagline
             const beerTag = document.querySelector("#beer-tagline")
+            const lastIndex = data[0].tagline[data[0].tagline.length - 1];
+            if (lastIndex === "."){
+                beerTag.innerText = data[0].tagline.slice(0, -1);
+            } else if (data[0].tagline === null) {
+                beerTag.innerText = "";
+            } else {
+                beerTag.innerText = data[0].tagline;
+            }
+            
 
             // //updates the beer description
             const beerDescription = document.querySelector(".beer-description");
