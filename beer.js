@@ -31,16 +31,36 @@ getBeerButton.addEventListener('click', function(){
             console.log(data[0].description)
 
             //query all the spots you need to update on click
+            //updates the ABV
             const ABV = document.querySelector(".abv");
             ABV.innerText = "Alcohol content: " + data[0].abv + "%";
+
+            //updates the year brewed
             const dateBrewed = document.querySelector(".brewdate");
+            //below will only return year since some have months and years, we want all uniform to just years
             const yearBrewed = 
             `${data[0].first_brewed[data[0].first_brewed.length - 4]}${data[0].first_brewed[data[0].first_brewed.length - 3]}${data[0].first_brewed[data[0].first_brewed.length - 2]}${data[0].first_brewed[data[0].first_brewed.length - 1]}`;
+            dateBrewed.innerText = "Year Started: " + yearBrewed;
 
-            dateBrewed.innerText = "Date Brewed: " + yearBrewed
+             //updates the beer img
             const beerImg = document.querySelector(".beer-img");
+            //not all beers have images, create a default for beers with no photos
+            if (data[0].image_url === null) {
+                beerImg.src = "https://cdn.dribbble.com/users/2443/screenshots/4237805/asset_14.png";
+            } else {
+                beerImg.src = data[0].image_url;
+            }
+
+
+             //updates the beer name
             const beerName = document.querySelector("#beer-name");
+
+
+
+             //updates the beer tagline
             const beerTag = document.querySelector("#beer-tagline")
+
+            // //updates the beer description
             const beerDescription = document.querySelector(".beer-description");
     
 
