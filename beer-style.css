@@ -11,13 +11,19 @@
 }
 
 .beer-header {
-    border: 3px solid yellow;
+    
     text-align: center;
 }
 .beer-button-container {
-    border: 3px solid black;
     display: flex;
     margin-top: 10px;
+    margin-bottom: 10px;;
+    flex: 1;
+}
+
+#beer-button {
+    width: 100%;
+    background-color: #FBCE3A;
 }
 
 .beer-displayer {
@@ -33,7 +39,7 @@
 
 .beer-img-container
  {
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,9 +47,9 @@
 
 .beer-img
  {
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
     width: auto;
-    height: 100%;
+    height: 600px;
     
 }
 
