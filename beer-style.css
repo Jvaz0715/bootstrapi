@@ -51,3 +51,13 @@
 .beer-tagline {
     text-align: end;
 }
+
+.beer-described {
+    background-color: gray;
+    padding: 5px;
+}
+
+.beer-description-title,
+.beer-description {
+    margin: 10px;
+}
