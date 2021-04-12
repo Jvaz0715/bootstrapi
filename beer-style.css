@@ -44,7 +44,7 @@
 
 .abv-datebrew-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -59,7 +59,7 @@
  {
     /*border: 3px solid blue;*/
     width: auto;
-    height: 600px;
+    height: 400px;
     
 }
 
@@ -89,4 +89,23 @@
 .beer-description {
     margin: 10px;
     color: #372f2f;
+}
+
+.beer-text {
+    font-size: 20px;
+}
+
+.abv,
+.brewdate {
+    background-color: #c9595f;
+    display: flex;
+    width: 140px;
+    height: 60px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: -50px;
 }
