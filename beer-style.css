@@ -45,7 +45,8 @@
 .abv-datebrew-container {
     display: flex;
     justify-content: space-between;
-
+    text-shadow: 4px 2px 7px gray;
+    margin-top: 10px;
 }
 
 .beer-img-container {
@@ -71,6 +72,7 @@
 .beer-name {
     color: #c9595f;
     font-size: 50px;
+    text-shadow: 4px 2px 7px gray;
 }
 
 .beer-tagline {
@@ -90,6 +92,9 @@
     margin: 10px;
     color: #372f2f;
 }
+.beer-description-title {
+    font-size: 40px;
+}
 
 .beer-text {
     font-size: 20px;
@@ -100,7 +105,7 @@
     background-color: #c9595f;
     display: flex;
     width: 140px;
-    height: 60px;
+    height: auto;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
@@ -108,4 +113,6 @@
     font-weight: bold;
     color: white;
     margin-bottom: -50px;
+    padding: 5px;
+    box-shadow: 4px 2px 7px gray;
 }
